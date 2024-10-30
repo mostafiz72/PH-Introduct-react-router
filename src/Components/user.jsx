@@ -1,7 +1,19 @@
 import React from 'react'
+import { useLoaderData } from 'react-router-dom'
 
 export default function user() {
+
+  const userSingleInfo = useLoaderData();
+  console.log(userSingleInfo);
+  
+  const {name,email,username} = userSingleInfo;
   return (
-    <div className=' text-3xl font-semibold text-blue-500 text-center py-5'>user</div>
+    <div className='text-center'>User Page here now
+      <div className=' border-2 border-lime-500'>
+        <h2>{name}</h2>
+        <h2>{username}</h2>
+        <h2>{email}</h2>
+      </div>
+    </div>
   )
 }

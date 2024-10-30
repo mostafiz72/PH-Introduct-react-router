@@ -9,7 +9,7 @@ export default function App() {
            <div className=' container mx-auto text-center flex gap-10 justify-center items-center font-bold text-green-400'>
               <Link to='/about'>About</Link>
             <Link to='/users'>Users</Link>
-            <Link to='/about'>User</Link>
+            <Link to='/user'>User</Link>
             <Link to='/posts'>Post</Link>
            </div>
          <Outlet/>
